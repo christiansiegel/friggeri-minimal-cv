@@ -35,7 +35,10 @@
 \newfontfamily\headingfont[]{HelveticaNeue-CondensedBold.ttf}
  
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text]{HelveticaNeue-Light.ttf}
+\setmainfont[Mapping=tex-text,
+  BoldFont=HelveticaNeue-CondensedBold.ttf,
+  ItalicFont=HelveticaNeue-LightItalic.ttf
+]{HelveticaNeue-Light.ttf}
 
 %%%%%%%%%
 % Stars %
