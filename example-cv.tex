@@ -1,0 +1,85 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-minimal-cv}
+
+\begin{document}
+
+\header{john}{doe}
+       {cool guy}
+
+\begin{aside}
+  \section{contact}
+    \sideblockspace%
+    123 Main St
+    Anytown, USA
+    \sideblockspace%
+    \href{mailto:john.doe@gmail.xyc}{john.doe@gmail.xyc}
+    (555)~555~5555
+    \sideblockspace%
+    \leftheader{skype}{johndoe}
+    \leftheader{github}{\href{https://github.com/johndoe}{johndoe}}
+  %
+  \section{skills}
+    \levelheaderrated{proficient}{3}
+    \quad C++
+    \quad Java
+    \quad JavaScript
+    \levelheaderrated{comfortable}{2}
+    \quad HTML
+    \quad SQL
+    \levelheaderrated{familiar}{1}
+    \quad CSS
+  %
+  \section{languages}
+    \levelheader{native}
+    \quad Klingon 
+    \levelheader{professional}
+    \quad English
+    \levelheader{basic}
+    \quad German
+\end{aside}
+
+\section{projects}
+
+\begin{undatedentrylist}
+  \undatedentry
+    {someproject \subheader{Short description of my awesome project}}
+    {\href{https://github.com/johndoe/someproject}{github.com/johndoe/someproject}}
+    {\cbullet~Line one of the advanced description\\
+     \cbullet~Another line of description}
+\end{undatedentrylist}
+
+\section{experience}
+
+\begin{entrylist}
+  \monthentry
+    {01/2005 -- 12/2010}
+    {Random Company Inc. \subheader{CEO}}
+    {Anytown, UK}
+    {\cbullet~Did this\\
+     \cbullet~And that}
+\end{entrylist}
+
+\section{education}
+
+\begin{entrylist}
+  \monthentry
+    {01/2004 -- 12/2005}
+    {MSc in Everything}
+    {University XY, Nowhere, DE}
+    {\leftheader{specialization}{Klingon}}
+  \shortmonthentry
+    {01/2000 -- 12/2003}
+    {BSc in Nothing}
+    {University XY, Nowhere, DE}
+\end{entrylist}
+
+\section{volunteering}
+
+\begin{entrylist}
+  \yearentry
+    {2015 -- 2016}
+    {Role}
+    {Organization}
+    {Description}
+\end{entrylist}
+\end{document}

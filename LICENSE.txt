@@ -1,0 +1,11 @@
+This template was downloaded from:
+https://github.com/christiansiegel/friggeri-cv
+
+Original author:
+Adrien Friggeri (adrien@friggeri.net)
+
+Modified by:
+Christian Siegel (christian.siegel@gmx.net)
+
+License:
+CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
