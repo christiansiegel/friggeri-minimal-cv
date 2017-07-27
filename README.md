@@ -2,7 +2,7 @@
 
 LaTeX CV template
 
-![example cv](example-cv.png "Example CV")
+<kbd><img src="example-cv.png" /></kbd>
 
 ## Usage
 
