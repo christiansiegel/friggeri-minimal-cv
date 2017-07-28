@@ -1,0 +1,31 @@
+\documentclass{friggeri-minimal-letter}
+
+\firstname{Sandra}
+\lastname{Musterfrau}
+\addressline{Kastanienstraße 12, 12345 Musterstadt}
+\phone{+49~1234~123456}
+\email{sandra.musterfrau@musterdormain.de}
+\place{Musterstadt}
+\date{\today}
+
+\begin{document}
+
+\begin{letter}{%
+    Firma\\
+    Ansprechpartner\\
+    Straße und Hausnummer\\
+    Postleitzahl und Ort}
+%
+\setkomavar{subject}{Betreff}
+%
+\opening{Sehr geehrte Frau Muster,}
+%
+\Blindtext[1]
+%
+\closing{Mit freundlichen Grüßen}
+
+%\setkomavar*{enclseparator}{Anlage}   % Überschrift für Anlagen (z.B. "Anlage")
+%\encl{Anlage 1\\ Anlage 2}            % Anlagen
+
+\end{letter}
+\end{document}

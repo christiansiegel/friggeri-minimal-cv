@@ -1,10 +1,13 @@
 This template was downloaded from:
 https://github.com/christiansiegel/friggeri-cv
 
-Original author:
+Original CV author:
 Adrien Friggeri (adrien@friggeri.net)
 
-Modified by:
+CV Modified by:
+Christian Siegel (christian.siegel@gmx.net)
+
+Letter author:
 Christian Siegel (christian.siegel@gmx.net)
 
 License:
