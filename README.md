@@ -2,7 +2,10 @@
 
 LaTeX CV and DIN letter template
 
+## Example CV
 <kbd><img src="example-cv.png" /></kbd>
+
+## Example Letter
 <kbd><img src="example-letter.png" /></kbd>
 
 ## Usage
