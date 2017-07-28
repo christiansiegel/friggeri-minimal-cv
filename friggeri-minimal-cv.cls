@@ -6,7 +6,7 @@
   \PassOptionsToClass{\CurrentOption}{article}%
 }
 \ProcessOptions\relax
-\LoadClass{article}
+\LoadClass[a4paper]{article}
 
 %%%%%%%%%%
 % Colors %
@@ -202,5 +202,5 @@
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=5.9cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=5.35cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
 \RequirePackage[hidelinks]{hyperref}
