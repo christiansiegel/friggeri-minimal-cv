@@ -1,5 +1,7 @@
 \ProvidesClass{friggeri-minimal-letter}[2017/07/28 letter class]
 \NeedsTeXFormat{LaTeX2e}
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{scrlttr2}}
+\ProcessOptions\relax
 \LoadClass[fontsize=11pt, version=last]{scrlttr2}
 
 %%%%%%%%%%
