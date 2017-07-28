@@ -31,6 +31,7 @@
 \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
  
 \newfontfamily\bodyfont[]{HelveticaNeue.ttf}
+\newfontfamily\lightfont[]{HelveticaNeue-Light.ttf}
 \newfontfamily\thinfont[]{HelveticaNeue-UltraLight.ttf}
 \newfontfamily\headingfont[]{HelveticaNeue-CondensedBold.ttf}
  
@@ -73,17 +74,14 @@
 
 \newcommand{\header}[3]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=white, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
+    \node [rectangle, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
     \node [anchor=center, text=headercolor] (name) at (box) {%
-      \fontsize{40pt}{72pt}%
-      {\thinfont #1}~~~{\bodyfont  #2}
+      \fontsize{40pt}{72pt}
+      \MakeLowercase{{\thinfont #1}~~~{\bodyfont  #2}}
     };
-    \node [anchor=north, text=headercolor] (title) at (name.south) {%
-      \fontsize{14pt}{24pt}%
-      \thinfont #3%
-    };
-    \node [anchor=north, minimum height=1cm] at (title.south) {%
-      %\rule{18.57cm}{1pt}
+    \node [anchor=north, align=center, text=textcolor] at (name.south) {%
+      \fontsize{11pt}{11pt}%
+      {\lightfont #3}
     };
   \end{tikzpicture}
   \vspace{2.5cm}
