@@ -36,9 +36,11 @@
  
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Mapping=tex-text,
-  BoldFont=HelveticaNeue-CondensedBold.ttf,
+  BoldFont=HelveticaNeue-Bold.ttf,
   ItalicFont=HelveticaNeue-LightItalic.ttf
 ]{HelveticaNeue-Light.ttf}
+
+\AtBeginDocument{\color{textcolor}}
 
 %%%%%%%%%
 % Stars %
@@ -72,12 +74,12 @@
 \newcommand{\header}[3]{%
   \begin{tikzpicture}[remember picture,overlay]
     \node [rectangle, fill=white, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
-    \node [anchor=center] (name) at (box) {%
-      \fontsize{40pt}{72pt}\color{headercolor}%
+    \node [anchor=center, text=headercolor] (name) at (box) {%
+      \fontsize{40pt}{72pt}%
       {\thinfont #1}~~~{\bodyfont  #2}
     };
-    \node [anchor=north] (title) at (name.south) {%
-      \fontsize{14pt}{24pt}\color{headercolor}%
+    \node [anchor=north, text=headercolor] (title) at (name.south) {%
+      \fontsize{14pt}{24pt}%
       \thinfont #3%
     };
     \node [anchor=north, minimum height=1cm] at (title.south) {%
@@ -100,7 +102,7 @@
     \LARGE\headingfont\color{sectionheadercolor}%
     #1
   }
-  \par\vspace{\parskip}\color{textcolor}
+  \par\vspace{\parskip}
 }
 
 \pagestyle{empty}
