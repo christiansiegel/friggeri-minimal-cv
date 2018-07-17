@@ -77,7 +77,7 @@
     \node [rectangle, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
     \node [anchor=center, text=headercolor] (name) at (box) {%
       \fontsize{40pt}{72pt}
-      \MakeLowercase{{\thinfont #1}~~~{\bodyfont  #2}}
+      {{\thinfont #1}~~~{\bodyfont  #2}}
     };
     \node [anchor=north, align=center, text=textcolor] at (name.south) {%
       \fontsize{11pt}{11pt}%
