@@ -60,10 +60,17 @@
     {\includegraphics[height=\fontcharht\font`\B]{icons/orange-star-empty.pdf}}}
 
 \newcommand{\starkern}{\kern.05em}
-\newcommand{\rating}[1]{%
+
+\newcommand{\ratingOutOfThree}[1]{%
   \ifthenelse{\equal{#1}{0}}{\orangestar{0}\starkern\orangestar{0}\starkern\orangestar{0}}{}%
   \ifthenelse{\equal{#1}{1}}{\orangestar{1}\starkern\orangestar{0}\starkern\orangestar{0}}{}%
   \ifthenelse{\equal{#1}{2}}{\orangestar{1}\starkern\orangestar{1}\starkern\orangestar{0}}{}%
+  \ifthenelse{\equal{#1}{3}}{\orangestar{1}\starkern\orangestar{1}\starkern\orangestar{1}}{}}
+
+\newcommand{\ratingUpToThree}[1]{%
+  \ifthenelse{\equal{#1}{0}}{}{}%
+  \ifthenelse{\equal{#1}{1}}{\orangestar{1}}{}%
+  \ifthenelse{\equal{#1}{2}}{\orangestar{1}\starkern\orangestar{1}}{}%
   \ifthenelse{\equal{#1}{3}}{\orangestar{1}\starkern\orangestar{1}\starkern\orangestar{1}}{}}
  
 %%%%%%%%%%
@@ -199,7 +206,7 @@
   \sideblockspace\textcolor{lightgray}{#1}}
 
 \newcommand{\levelheaderrated}[2]{%
-  \sideblockspace\rating{#2}~\textcolor{lightgray}{#1}}
+  \sideblockspace\ratingUpToThree{#2}~\textcolor{lightgray}{#1}}
 
 %%%%%%%%%%%%%%%%
 % Other tweaks %
