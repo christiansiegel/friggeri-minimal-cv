@@ -162,6 +162,9 @@
 \newcommand{\subheader}[1]{%
   {\normalfont{|}} \textcolor{lightgray}{#1}}
 
+\newcommand{\gpa}[1]{%
+  {\normalfont{|}} \normalfont{\textcolor{lightgray}{#1}}}
+
 %%%%%%%%%%%%%%
 % Side block %
 %%%%%%%%%%%%%%
