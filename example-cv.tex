@@ -44,8 +44,10 @@
   \undatedentry
     {someproject \subheader{Short description of my awesome project}}
     {\href{https://github.com/johndoe/someproject}{github.com/johndoe/someproject}}
-    {\cbullet~Line one of the advanced description\\
-     \cbullet~Another line of description}
+    {\begin{entryitemize}
+       \item Line one of the advanced description
+       \item Another very very very very very very very very very very long line of description that should wrap nicely
+     \end{entryitemize}}
 \end{undatedentrylist}
 
 \section{experience}
@@ -55,8 +57,10 @@
     {01/2005 -- 12/2010}
     {Random Company Inc. \subheader{CEO}}
     {Anytown, UK}
-    {\cbullet~Did this\\
-     \cbullet~And that}
+    {\begin{entryitemize}
+       \item Did this
+       \item And that
+     \end{entryitemize}}
 \end{entrylist}
 
 \section{education}
@@ -66,11 +70,11 @@
     {01/2004 -- 12/2005}
     {MSc in Everything \gpa{GPA: 1.0}}
     {University XY, Nowhere, DE}
-    {\leftheader{specialization}{Klingon}}
+    {\\\leftheader{specialization}{Klingon}}
   \shortmonthentry
     {01/2000 -- 12/2003}
     {BSc in Nothing}
-    {University XY, Nowhere, DE}
+    {\\University XY, Nowhere, DE}
 \end{entrylist}
 
 \section{volunteering}
@@ -80,6 +84,6 @@
     {2015 -- 2016}
     {Role}
     {Organization}
-    {Description}
+    {\\Description}
 \end{entrylist}
 \end{document}

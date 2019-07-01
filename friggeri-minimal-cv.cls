@@ -28,7 +28,7 @@
 %%%%%%%%%
 
 \RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\RequirePackage[math-style=TeX]{unicode-math}
  
 \newfontfamily\bodyfont[]{HelveticaNeue.ttf}
 \newfontfamily\lightfont[]{HelveticaNeue-Light.ttf}
@@ -132,7 +132,7 @@
   #1&\parbox[t]{12.0cm}{%
     \textbf{#2}%
     \hfill%
-    {\addfontfeature{Color=lightgray} #3}\\%
+    {\addfontfeature{Color=lightgray} #3}%
     #4\vspace{\parsep}%
   }\\}
 
@@ -140,7 +140,7 @@
   #1&\parbox[t]{11.0cm}{%
     \textbf{#2}%
     \hfill%
-    {\addfontfeature{Color=lightgray} #3}\\%
+    {\addfontfeature{Color=lightgray} #3}%
     #4\vspace{\parsep}%
   }\\}
 
@@ -162,7 +162,7 @@
   \parbox[t]{\textwidth}{%
     \textbf{#1}%
     \hfill%
-    {\addfontfeature{Color=lightgray} #2}\\%
+    {\addfontfeature{Color=lightgray} #2}%
     #3\vspace{\parsep}%
   }\\}
 
@@ -171,6 +171,10 @@
 
 \newcommand{\gpa}[1]{%
   {\normalfont{|}} \normalfont{\textcolor{lightgray}{#1}}}
+
+\RequirePackage{enumitem}
+\newlist{entryitemize}{enumerate}{1}
+\setlist[entryitemize,1]{label=\cbullet,leftmargin=*}
 
 %%%%%%%%%%%%%%
 % Side block %
